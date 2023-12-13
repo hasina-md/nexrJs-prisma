@@ -12,8 +12,9 @@ datasource db {
   model Course {
    id        Int     @id @default(autoincrement())
   title     String
+  description String  @default("No Description")
  }
   model Users {
-    id   Int @id @default(autoincrement())
-    name String
+    id     Int @id @default(autoincrement())
+    name   String
   }
